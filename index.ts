@@ -80,3 +80,66 @@ function greetUser(name: string, age?: number): string {
 }
 console.log(greetUser("Ganesh"))
 console.log(greetUser("Ganesh",22))
+
+//default parameter
+function User(name:string,age:number=23):string{
+    return`Hello ${name}, Age ${age}`;
+}
+console.log(User("Sasi"))
+
+//arrow function with types
+const addNumbers=(a:number,b:number): number => {
+    return a+b;
+}
+console.log(addNumbers(10,20))
+
+//array with union type
+let data1: (number | string)[] = [1, "Ganesh", 2, "Ram"];
+console.log(data1)
+
+//arrays of objects
+let students:{name:string , age:number}[]=[
+   {
+    name:"Ganesh",
+    age:22
+    },
+   {
+    name:"Sasi",
+    age:23
+    }
+]
+
+console.log(students)
+
+//array of methods
+let Numbers: number[]=[1,2,3];
+Numbers.push(4);
+console.log(Numbers);
+
+//forEach
+Numbers.forEach((num: number) => {
+  console.log(num);
+});
+
+//map
+let doubled = Numbers.map((num: number): number => {
+  return num * 2;
+});
+console.log(doubled)
+
+//multidimension array
+let matrix:number[][]=[
+    [1,2],
+    [3,4],
+    [5,6]
+]
+console.log(matrix);
+
+
+//readonly array
+let fruits: readonly string[]=["Apple","Orange"];
+console.log(fruits);
+
+//tuple special array
+let person1:[string, number]=["Ganesh",22];
+console.log(person1)

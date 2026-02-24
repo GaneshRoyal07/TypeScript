@@ -143,3 +143,28 @@ console.log(fruits);
 //tuple special array
 let person1:[string, number]=["Ganesh",22];
 console.log(person1)
+
+//palindrome program
+function isPalindrome(word: string): boolean {
+    const reversed = word.split("").reverse().join("");
+    return word === reversed;
+}
+
+console.log(isPalindrome("madam")); 
+console.log(isPalindrome("ganesh")); 
+
+//prime number program
+function isPrime(num: number): boolean {
+    if (num <= 1) return false;
+
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(isPrime(7));  
+console.log(isPrime(10)); 

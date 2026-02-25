@@ -150,7 +150,7 @@ function isPalindrome(word: string): boolean {
     return word === reversed;
 }
 
-console.log(isPalindrome("madam")); 
+console.log(isPalindrome("mom")); 
 console.log(isPalindrome("ganesh")); 
 
 //prime number program
